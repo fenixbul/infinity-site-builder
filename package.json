@@ -1,0 +1,16 @@
+{
+  "name": "infinity-site-builder",
+  "version": "1.0.0",
+  "description": "This project is designed to deploy a React-based Single Page Application (SPA) to the Internet Computer using Next.js for frontend development and Motoko Canisters for backend functionality. The setup leverages DFINITY's Internet Computer and Webpack for handling the canisters and bundling.",
+  "main": "dfx.webpack.config.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "dev": "cd src/web_interface && npm run dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
