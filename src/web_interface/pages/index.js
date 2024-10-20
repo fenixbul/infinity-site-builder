@@ -1,8 +1,13 @@
-export default function Home() {
+import Layout from "../ui/components/Layout";
+
+function Home() {
   return (
-    <div>
-      <h1>It works! 🥳</h1>
-      <p>This is your home page.</p>
-    </div>
+    <>
+      <Layout>
+        Test
+      </Layout>
+    </>
   );
 }
+
+export default Home;
