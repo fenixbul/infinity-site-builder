@@ -1,0 +1,12 @@
+{
+  "canisters": {
+    "web_interface": {
+      "frontend": {
+        "entrypoint": "src/web_interface/out/index.html"
+      },
+      "type": "assets",
+      "source": ["src/web_interface/out"],
+      "build": ["cd src/web_interface && npm run build"]
+    }
+  }
+}
