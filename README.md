@@ -37,6 +37,8 @@ my-nextjs-project/
 - **React**: JavaScript library for building the user interface.
 - **Next.js**: Framework for React applications with server-side rendering, routing, and other optimizations.
 - **Webpack**: Module bundler, used for building the frontend and handling environment variables.
+- **Tailwind CSS**: Utility-first CSS framework used for styling.
+- **Flowbite**: A Tailwind component library to quickly create prebuilt UI components. Documentation available [here](https://flowbite-react.com/).
 
 To install the local dependencies:
 ```bash
@@ -163,6 +165,7 @@ The `.gitignore` file ensures that sensitive files like environment variables an
 
 - **Webpack Configuration**: The `dfx.webpack.config.js` helps with initializing canister IDs and ensuring that environment variables are passed correctly into the Next.js application.
 - **Static Export**: The Next.js configuration is set to `output: 'export'`, meaning the app is built as a static site, which is suitable for hosting on an asset canister.
+- **Using Tailwind CSS and Flowbite**: Tailwind CSS is used for styling throughout the app. Flowbite, a Tailwind component library, is used to quickly create interactive UI components. Check Flowbite React documentation [here](https://flowbite-react.com/).
 
 ## Known Issues
 
