@@ -1,3 +1,133 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* 
+@font-face {
+  font-family: 'ADYS';
+  src: url('/fonts/ADYS-Regular V5-5.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ADYS';
+  src: url('/fonts/ADYS-Bold V5-5.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+} */
+
+@font-face {
+  font-family: 'Sybilla';
+  src: url('/fonts/Sybilla-Heavy.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HKGrotesk';
+  src: url('/fonts/HKGrotesk-Medium.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  font-size: 18px;
+
+  @apply select-none;
+}
+
+body {
+  font-size: 1rem;
+  font-family: 'HKGrotesk', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, nav, .header-font {
+  font-family: 'Sybilla', sans-serif;
+}
+
+nav {
+  text-transform: uppercase;
+}
+
+/* Markdown */
+.markdown {
+  @apply text-base leading-relaxed;
+}
+
+.markdown h1 {
+  @apply text-4xl font-extrabold mb-4;
+}
+
+.markdown h2 {
+  @apply text-3xl font-semibold mb-3 mt-6;
+}
+
+.markdown h3 {
+  @apply text-2xl font-semibold mb-2 mt-5;
+}
+
+.markdown h4 {
+  @apply text-xl mb-2 mt-5;
+}
+
+.markdown p {
+  @apply mb-4;
+}
+
+.markdown ul {
+  @apply list-disc list-inside mb-4 pl-4;
+}
+
+.markdown ol {
+  @apply list-decimal list-inside mb-4 pl-4;
+}
+
+.markdown li {
+  @apply mb-2;
+}
+
+.markdown strong {
+  @apply font-bold;
+}
+
+.markdown em {
+  @apply italic;
+}
+
+.markdown a {
+  @apply text-blue-500 underline hover:text-blue-600;
+}
+
+.markdown blockquote {
+  @apply border-l-4 border-gray-300 pl-4 italic text-gray-700 my-4;
+}
+
+.markdown pre {
+  @apply bg-gray-100 p-4 rounded-lg overflow-x-auto;
+}
+
+.markdown code {
+  @apply bg-gray-200 text-sm rounded p-1;
+}
+
+.markdown hr {
+  @apply mb-4;
+}
+
+nav .logo-link {
+  outline: none; /* Removes the focus outline */
+}
+
+nav .logo-link:focus-visible {
+  outline: none; /* Ensures no focus outline is shown */
+}
+
+@media (min-width: 1200px) {
+  .cta-img {
+    position: absolute;
+    width: calc(50% - 30px);
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
