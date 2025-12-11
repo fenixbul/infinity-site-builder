@@ -56,6 +56,18 @@ function Home() {
     imageSrc: "/img/donations-cover.jpg"
   };
   
+  const newYearMessageData = {
+    image: "/img/message-bg.jpg",
+    title: "Сдружение „Фонд Жеравна“ ви пожелава Весела Коледа и щастлива Нова 2026 година.",
+    fullScreen: true,
+    useOverlay: true,
+    overlayDepth: 0.4,
+    textColor: "text-white",
+    textHeaderColor: "text-white",
+    containerSize: "default",
+    textAlign: "left"
+  };
+
   const backgroundSectionData = {
     image: "/img/homepage-our-mission-cover.jpg",
     title: `
@@ -76,6 +88,7 @@ function Home() {
     <>
       <Layout>
         <div className="">
+          <BackgroundSection {...newYearMessageData} />
           <BackgroundSection {...backgroundSectionData} textColor="text-black" textHeaderColor="text-[#784D2A]" />
           {/* <HeroSection {...heroSection} /> */}
           <CTASection {...ctaData} />
