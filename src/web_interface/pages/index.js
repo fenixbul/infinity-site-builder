@@ -88,7 +88,7 @@ function Home() {
     <>
       <Layout>
         <div className="">
-          <BackgroundSection {...newYearMessageData} />
+          {/* <BackgroundSection {...newYearMessageData} /> */}
           <BackgroundSection {...backgroundSectionData} textColor="text-black" textHeaderColor="text-[#784D2A]" />
           {/* <HeroSection {...heroSection} /> */}
           <CTASection {...ctaData} />
